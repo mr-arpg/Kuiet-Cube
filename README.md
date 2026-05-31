@@ -8,11 +8,11 @@ The Kuiet Cube is a quiet room where an **external status LED** responds to pres
 
 <img src="docs/media/photos/desk_demo.jpeg" alt="Desk installation — external LED and radar sensor" width="480">
 
-<a href="docs/media/videos/demo_room.mp4">
-  <img src="docs/media/photos/demo_room_poster.jpg" alt="Click to watch room demo video" width="480">
+<a href="https://youtube.com/shorts/G4Zh3A4YDuU">
+  <img src="https://img.youtube.com/vi/G4Zh3A4YDuU/hqdefault.jpg" alt="Watch room demo on YouTube" width="480">
 </a>
 
-*Click the image above to watch the room demo — presence detection drives the external LED on/off.*
+*[Watch on YouTube](https://youtube.com/shorts/G4Zh3A4YDuU) — presence detection drives the external LED on/off.*
 
 ## Overview
 
@@ -31,8 +31,7 @@ The room uses **contactless presence detection** instead of switches or motion b
 ├── src/                    # Firmware (PlatformIO / Arduino)
 ├── scripts/                # Serial plotting & development tools
 ├── hardware/stl/           # 3D-printable parts (sensor enclosure + external LED)
-├── docs/media/photos/      # Installation and hardware photos
-└── docs/media/videos/      # Room demo footage
+└── docs/media/photos/      # Installation and hardware photos
 ```
 
 ## Hardware — 3D models
