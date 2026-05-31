@@ -6,11 +6,13 @@ The Kuiet Cube is a quiet room where an **external status LED** responds to pres
 
 ## Demo
 
-![Desk installation — external LED and radar sensor](docs/media/photos/desk_demo.jpeg)
+<img src="docs/media/photos/desk_demo.jpeg" alt="Desk installation — external LED and radar sensor" width="480">
 
-<video controls src="https://raw.githubusercontent.com/mr-arpg/Kuiet-Cube/main/docs/media/videos/demo_room.mp4" width="100%"></video>
+<a href="docs/media/videos/demo_room.mp4">
+  <img src="docs/media/photos/demo_room_poster.jpg" alt="Click to watch room demo video" width="480">
+</a>
 
-*Room demo — presence detection drives the external LED on/off.*
+*Click the image above to watch the room demo — presence detection drives the external LED on/off.*
 
 ## Overview
 
