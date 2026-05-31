@@ -2,41 +2,49 @@
 
 A collaborative project between **NOVA SBE** and **KPMG** to design and build a dedicated space for **meditation and deep focus** on campus.
 
-The Kuiet Cube is a quiet room where lighting and ambience respond to presence — helping people step out of distraction and into a calmer, more focused state. This repository contains the embedded firmware, 3D-printable hardware, and project media for the presence-sensing lighting system used inside the cube.
+The Kuiet Cube is a quiet room where an **external status LED** responds to presence — helping people step out of distraction and into a calmer, more focused state. This repository contains the embedded firmware, 3D-printable hardware, and project media for the presence-sensing system used in the cube.
+
+## Demo
+
+![Desk installation — external LED and radar sensor](docs/media/photos/desk_demo.jpeg)
+
+<video controls src="https://raw.githubusercontent.com/mr-arpg/Kuiet-Cube/main/docs/media/videos/demo_room.mp4" width="100%"></video>
+
+*Room demo — presence detection drives the external LED on/off.*
 
 ## Overview
 
-The room uses **contactless presence detection** instead of switches or motion buttons. When someone enters the cube, ambient lighting turns on automatically; when the space is empty, lights fade off to save energy and preserve a restful atmosphere.
+The room uses **contactless presence detection** instead of switches or motion buttons. When someone enters the cube, the **external LED** (mounted outside) turns on as a visual indicator; when the space is empty, it turns off.
 
 | Component | Role |
 |-----------|------|
 | **ESP32** | Main controller |
 | **HLK-LD2410** | 24 GHz mmWave radar for presence detection |
-| **WS2811 LED strip** | Ambient lighting (13 LEDs) |
-| **3D-printed enclosure** | Desk-mounted sensor housing |
+| **WS2811 LED strip** | External status LED (13 LEDs) |
+| **3D-printed parts** | Sensor enclosure + external LED housing |
 
 ## Project structure
 
 ```
 ├── src/                    # Firmware (PlatformIO / Arduino)
 ├── scripts/                # Serial plotting & development tools
-├── hardware/stl/           # 3D-printable parts for the sensor enclosure
+├── hardware/stl/           # 3D-printable parts (sensor enclosure + external LED)
 ├── docs/media/photos/      # Installation and hardware photos
 └── docs/media/videos/      # Room demo footage
 ```
 
 ## Hardware — 3D models
 
-Print files are in [`hardware/stl/`](hardware/stl/):
+Print files are in [`hardware/stl/`](hardware/stl/) — used for both the desk-mounted radar enclosure and the **external LED housing**:
 
 | File | Description |
 |------|-------------|
-| `esp32-box-top.stl` | Top half of the ESP32 enclosure |
-| `esp32-boxbottom.stl` | Bottom half of the ESP32 enclosure |
-| `suporte.stl` | Mount / bracket for desk installation |
-| `tampa.stl` | Lid / cover |
+| `esp32-box-top.stl` | Top half of the ESP32 / sensor enclosure |
+| `esp32-boxbottom.stl` | Bottom half of the ESP32 / sensor enclosure |
+| `suporte.stl` | Mount / bracket |
+| `tampa.stl` | Lid / cover (sensor & LED assemblies) |
 
-See [`docs/media/photos/sensor_enclosure_3Dmodel.png`](docs/media/photos/sensor_enclosure_3Dmodel.png) for a render of the assembled enclosure.
+See [`docs/media/photos/sensor_enclosure_3Dmodel.png`](docs/media/photos/sensor_enclosure_3Dmodel.png) for a render of the 3D-printed enclosure.
 
 ## Firmware
 
@@ -76,11 +84,6 @@ pip install -r scripts/requirements-plot.txt
 pio run -e radar_test -t upload
 python scripts/plot_radar_serial.py COM7   # adjust port
 ```
-
-## Media
-
-- **Photos** — [`docs/media/photos/`](docs/media/photos/)
-- **Videos** — [`docs/media/videos/demo_room.mp4`](docs/media/videos/demo_room.mp4)
 
 ## Partners
 
