@@ -18,6 +18,10 @@ The Kuiet Cube is a quiet room where an **external status LED** responds to pres
       </a><br>
       <sub><a href="https://youtube.com/shorts/G4Zh3A4YDuU">Room demo</a></sub>
     </td>
+    <td align="center">
+      <img src="docs/media/photos/sensor_enclosure_3Dmodel.png" alt="3D model of the sensor enclosure" width="160"><br>
+      <sub>Sensor enclosure (3D)</sub>
+    </td>
   </tr>
 </table>
 
@@ -52,7 +56,7 @@ Print files are in [`hardware/stl/`](hardware/stl/) — used for both the desk-m
 | `suporte.stl` | Mount / bracket |
 | `tampa.stl` | Lid / cover (sensor & LED assemblies) |
 
-See [`docs/media/photos/sensor_enclosure_3Dmodel.png`](docs/media/photos/sensor_enclosure_3Dmodel.png) for a render of the 3D-printed enclosure.
+See the **Demo** section above for a render of the 3D-printed enclosure.
 
 ## Firmware
 
