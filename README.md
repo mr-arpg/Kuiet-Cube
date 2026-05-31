@@ -6,13 +6,20 @@ The Kuiet Cube is a quiet room where an **external status LED** responds to pres
 
 ## Demo
 
-<img src="docs/media/photos/desk_demo.jpeg" alt="Desk installation — external LED and radar sensor" width="160">
-
-<a href="https://youtube.com/shorts/G4Zh3A4YDuU">
-  <img src="https://img.youtube.com/vi/G4Zh3A4YDuU/hqdefault.jpg" alt="Watch room demo on YouTube" width="160">
-</a>
-
-*[Watch on YouTube](https://youtube.com/shorts/G4Zh3A4YDuU) — presence detection drives the external LED on/off.*
+<table>
+  <tr>
+    <td align="center">
+      <img src="docs/media/photos/desk_demo.jpeg" alt="Desk installation — external LED and radar sensor" width="160"><br>
+      <sub>Desk installation</sub>
+    </td>
+    <td align="center">
+      <a href="https://youtube.com/shorts/G4Zh3A4YDuU">
+        <img src="https://img.youtube.com/vi/G4Zh3A4YDuU/hqdefault.jpg" alt="Watch room demo on YouTube" width="160">
+      </a><br>
+      <sub><a href="https://youtube.com/shorts/G4Zh3A4YDuU">Room demo</a></sub>
+    </td>
+  </tr>
+</table>
 
 ## Overview
 
